@@ -1,0 +1,141 @@
+:root {
+  --main-bg: #003049;
+  --main-text: #d62828;
+  --section-bg: #eae2b7;
+}
+html,
+body {
+  background: var(--main-bg);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+* {
+  box-sizing: border-box;
+  /* By adding box-sizing:border-box; to the CSS for section, each section will maintain 100% width inclusive of the applied padding. */
+}
+h1 {
+  font-size: 5em;
+}
+
+.nav-container {
+  background-color: var(--section-bg);
+  color: var(--main-text);
+  font-size: 2em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.welcome-container {
+  color: var(--main-text);
+  /* background: violet; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-container p {
+  font-size: 2em;
+}
+
+.contact-container {
+  background-color: red;
+}
+
+.info-container {
+  /* background-color: var(--section-bg); */
+  margin: 100px;
+  color: var(--main-text);
+}
+.info-container h1 {
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.about-me-container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-me-container p {
+  width: 50%;
+  line-height: 2em;
+}
+.about-me-container img {
+  border-radius: 1em;
+  height: auto;
+}
+
+.project-container {
+  text-align: center;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--main-text);
+  margin: 500px 0px;
+}
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  width: 80% !important ;
+  margin: 100px 0px;
+  /* height: 50%; */
+}
+.project-card img {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 1em;
+}
+.project-info-right {
+    width: 33%;
+    text-align: left;
+}
+.project-info-left {
+    width: 33%;
+    text-align: right;
+}
+.float-left {
+  transform: translateX(-75px);
+  display: flex;
+
+}
+.float-right {
+  transform: translateX(75px);
+  display: flex;
+  flex-direction:row-reverse
+}
+.project-info {
+
+}
+.btn {
+    background-color: var(--section-bg);
+    border: none;
+    margin: 0px 10px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--border-text);
+}
