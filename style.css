@@ -10,6 +10,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 /* body {
   animation: fadeInAnimation ease 6s;
@@ -34,7 +35,6 @@ h1 {
 
 .nav-container {
   color: var(--section-bg);
-  /* color: var(--main-text); */
   font-size: 2em;
   font-weight: 500;
   display: flex;
@@ -86,7 +86,6 @@ h1 {
 
 .project-container {
   text-align: center;
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -127,15 +126,50 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
 }
-.project-info {
-}
+/* .project-info {
+} */
 .btn {
   background-color: var(--section-bg);
   border: none;
   margin: 0px 10px;
 }
+.btn:hover {
+    background-color: var(--main-text);
+    color: var(--section-bg);
+}
 .card-img-top {
   border: 5px solid var(--section-bg);
+}
+
+#contact {
+    padding-bottom: 25px;
+}
+.icon-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-text-container:hover{
+    transform: scale(1.15, 1.15);
+}
+
+.contact-me {
+    color: var(--section-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--section-bg);
+    padding-top: 10px;
+}
+#email-me {
+    border: 5px solid var(--section-bg);
+    background-color: var(--main-text);
+    border-radius: 1em;
+    padding: 10px;
+}
+#email-me:hover {
+    /* opacity: .75; */
+    transform: scale(1.25, 1.25);
 }
 
 a:link,
