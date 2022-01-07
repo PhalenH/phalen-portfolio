@@ -103,10 +103,12 @@ h1 {
   margin: 100px 0px;
   /* height: 50%; */
 }
-.project-card img {
+.outer-image-container{
   width: 50%;
+  /* display: flex; */
+}
+.project-card img {
   height: auto;
-  display: block;
   border-radius: 1em;
 }
 .project-info-right {
@@ -168,7 +170,6 @@ h1 {
     padding: 10px;
 }
 #email-me:hover {
-    /* opacity: .75; */
     transform: scale(1.15, 1.15);
 }
 
@@ -178,4 +179,16 @@ a:hover,
 a:active {
   text-decoration: none;
   color: var(--border-text);
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
 }
