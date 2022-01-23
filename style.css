@@ -12,8 +12,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-/* body {
-  animation: fadeInAnimation ease 6s;
+/* #greeting {
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#who-i-am {
+  animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -58,9 +63,11 @@ h1 {
   background-color: red;
 }
 
+/* ============================================ */
+
 .info-container {
   /* background-color: var(--section-bg); */
-  margin: 100px;
+  margin: 100px 50px;
   color: var(--section-bg);
 }
 .info-container h1 {
@@ -68,21 +75,29 @@ h1 {
   text-align: center;
 }
 .about-me-container {
-  margin: 50px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 50px 25px;
+  /* display: flex;
+  /* flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   color: var(--section-bg);
 }
 .about-me-container p {
-  width: 50%;
+  /* width: 50%; */
   line-height: 2em;
 }
 .about-me-container img {
-  border-radius: 1em;
+  max-width: 100%;
+  height: auto;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+}
+.bio-image-container {
+  float: right;
   height: auto;
 }
+/* ============================================ */
 
 .project-container {
   text-align: center;
@@ -96,16 +111,18 @@ h1 {
   padding-bottom: 10px;
   border-bottom: 1px solid;
 }
+
+/* ============================================ */
+
 .project-card {
-  display: flex;
-  justify-content: space-between;
-  width: 80% !important ;
-  margin: 100px 0px;
+  /* display: flex; */
+  justify-content: space-evenly;
+  width: 100% !important ;
+  margin: 100px 25px;
   /* height: 50%; */
 }
 .outer-image-container{
   width: 50%;
-  /* display: flex; */
 }
 .project-card img {
   height: auto;
@@ -120,14 +137,16 @@ h1 {
   text-align: right;
 }
 .float-left {
-  transform: translateX(-75px);
+  /* transform: translateX(-75px); */
   display: flex;
 }
 .float-right {
-  transform: translateX(75px);
+  /* transform: translateX(75px); */
   display: flex;
   flex-direction: row-reverse;
 }
+
+/* ============================================ */
 /* .project-info {
 } */
 .btn {
@@ -162,6 +181,7 @@ h1 {
     align-items: center;
     border-top: 1px solid var(--section-bg);
     padding-top: 25px;
+    text-align: center;
 }
 #email-me {
     border: 3px solid var(--section-bg);
@@ -182,11 +202,42 @@ a:active {
 }
 
 @media screen and (max-width: 992px) {
-
+  .small-left{
+    float: left;
+    margin-right: 1em;
+  }
+  .small-right{
+    float: right;
+    margin-left: 1em;
+  }
+  .project-card {
+    display: inline;
+  }
+  .project-info-left {
+    display: inline;
+  }
+  .project-info-right {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+  .bio-image-container {
+    width: 100%;
+  }
+  .about-me-container {
+    text-align: center;
+  }
+  .outer-image-container{
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .project-info-right {
+    text-align: center;
+  }
+  .project-info-left {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
