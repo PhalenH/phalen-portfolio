@@ -89,6 +89,7 @@ h1 {
 
 .info-container {
   /* background-color: var(--section-bg); */
+  padding-top: 50px;
   margin: 100px 50px;
   color: var(--section-bg);
 }
@@ -171,6 +172,17 @@ h1 {
 /* ============================================ */
 /* .project-info {
 } */
+
+.footer-container {
+    color: var(--section-bg);
+    font-size: 2em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: white;
+    
+}
 .btn {
   background-color: var(--section-bg);
   border: none;
