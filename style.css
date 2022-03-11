@@ -1,7 +1,10 @@
 :root {
-  --main-bg: #003049;
+  --main-bg: black;
+  --main-text: white;
+  --section-bg: #c3073f;
+  /* --main-bg: #003049;
   --main-text: #d62828;
-  --section-bg: #eae2b7;
+  --section-bg: #eae2b7; */
 }
 html,
 body {
@@ -12,13 +15,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-/* #greeting {
+#greeting {
   animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 #who-i-am {
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInP ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -29,7 +32,18 @@ body {
   100% {
     opacity: 1;
   }
-} */
+}
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   /* By adding box-sizing:border-box; to the CSS for section, each section will maintain 100% width inclusive of the applied padding. */
@@ -39,28 +53,36 @@ h1 {
 }
 
 .nav-container {
-  color: var(--section-bg);
-  font-size: 2em;
+  color: var(--main-bg);
+  font-size: 1.5em;
   font-weight: 500;
   display: flex;
   justify-content: space-evenly;
-  padding: 15px;
+  padding: 5px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 .welcome-container {
   color: var(--main-text);
-  /* background: violet; */
+  background-image: url(./assets/phillyskyline.jpg);
+  background-repeat: no-repeat;
+  background-size: 1910px 950px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.welcome-container p {
-  font-size: 2em;
+.welcome-information {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 5px white;
 }
-
-.contact-container {
-  background-color: red;
+.welcome-information p {
+  font-size: 2em;
 }
 
 /* ============================================ */
@@ -121,7 +143,7 @@ h1 {
   margin: 100px 25px;
   /* height: 50%; */
 }
-.outer-image-container{
+.outer-image-container {
   width: 50%;
 }
 .project-card img {
@@ -155,42 +177,42 @@ h1 {
   margin: 0px 10px;
 }
 .btn:hover {
-    background-color: var(--main-text);
-    color: var(--section-bg);
+  background-color: var(--main-text);
+  color: var(--section-bg);
 }
 .card-img-top {
   border: 3px solid var(--section-bg);
 }
 
 #contact {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 .icon-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.icon-text-container:hover{
-    transform: scale(1.15, 1.15);
+.icon-text-container:hover {
+  transform: scale(1.15, 1.15);
 }
 
 .contact-me {
-    color: var(--section-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid var(--section-bg);
-    padding-top: 25px;
-    text-align: center;
+  color: var(--section-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--section-bg);
+  padding-top: 25px;
+  text-align: center;
 }
 #email-me {
-    border: 3px solid var(--section-bg);
-    background-color: var(--main-text);
-    border-radius: 1em;
-    padding: 10px;
+  border: 3px solid var(--section-bg);
+  background-color: var(--main-text);
+  border-radius: 1em;
+  padding: 10px;
 }
 #email-me:hover {
-    transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
 }
 
 a:link,
@@ -202,11 +224,11 @@ a:active {
 }
 
 @media screen and (max-width: 992px) {
-  .small-left{
+  .small-left {
     float: left;
     margin-right: 1em;
   }
-  .small-right{
+  .small-right {
     float: right;
     margin-left: 1em;
   }
@@ -228,7 +250,7 @@ a:active {
   .about-me-container {
     text-align: center;
   }
-  .outer-image-container{
+  .outer-image-container {
     width: 100%;
     margin-bottom: 1em;
   }
@@ -241,5 +263,4 @@ a:active {
 }
 
 @media screen and (max-width: 576px) {
-
 }
