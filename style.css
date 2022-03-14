@@ -176,16 +176,19 @@ h1 {
   flex-direction: row-reverse;
 }
 
-/* ============================================ */
-/* .project-info {
-} */
-
+#contact {
+  min-height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 .footer-container {
     color: var(--section-bg);
     font-size: 2em;
     font-weight: 500;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     padding: 15px;
     background-color: white;
     
