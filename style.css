@@ -199,16 +199,35 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: turquoise;
+  background-color: black;
   padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+.contact-me-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-me-info img {
+  border-radius: 25%;
+  height: 200px;
+  margin-right: 50px;
+}
+.h2-info {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 10px;
+  
 }
 .footer-container {
-  color: var(--section-bg);
+  color: white;
   font-size: 2em;
   font-weight: 500;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 66%;
   padding: 15px;
   /* background-color: black; */
 }
@@ -229,6 +248,7 @@ h1 {
 
 #contact {
   padding-bottom: 25px;
+  border-top: 10px solid white;
 }
 .icon-text-container {
   display: flex;
@@ -240,19 +260,21 @@ h1 {
 }
 
 .contact-me {
-  color: var(--section-bg);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid var(--section-bg);
   padding-top: 25px;
   text-align: center;
+  width: 50%;
 }
 #email-me {
   border: 3px solid var(--section-bg);
   background-color: var(--main-text);
   border-radius: 1em;
   padding: 10px;
+  color: var(--section-bg);
 }
 #email-me:hover {
   transform: scale(1.15, 1.15);
