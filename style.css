@@ -61,10 +61,11 @@ h1 {
   justify-content: space-evenly;
   padding: 5px;
   position: fixed;
+  z-index: 1;
 }
 .nav-container a {
-   font-size: 1em;
-   margin-top: 5px;
+  font-size: 1em;
+  margin-top: 5px;
 }
 .white-fill {
   color: white;
@@ -95,16 +96,19 @@ h1 {
 
 .info-container {
   /* background-color: var(--section-bg); */
+  position: relative;
   padding-top: 50px;
-  margin: 50px 50px;
+  margin: 50px 0px;
   color: white;
+  min-height: 100%;
 }
 .info-container h1 {
   border-bottom: 1px solid;
   text-align: center;
+  margin: 0px 50px;
 }
 .about-me-container {
-  margin: 50px 25px;
+  margin: 50px 50px;
   /* display: flex;
   /* flex-wrap: wrap;
   align-items: center;
@@ -115,7 +119,7 @@ h1 {
   /* width: 50%; */
   line-height: 2em;
 }
-.about-me-container img {
+.selfie {
   max-width: 100%;
   height: auto;
   margin-left: 1em;
@@ -125,6 +129,20 @@ h1 {
 .bio-image-container {
   float: right;
   height: auto;
+}
+.skill-icons {
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-logo {
+  height: 75px;
+  width: auto;
+  color: white;
+  padding: 10px 0px;
 }
 /* ============================================ */
 
@@ -182,23 +200,24 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
   background-color: turquoise;
+  padding-top: 50px;
 }
 .footer-container {
-    color: var(--section-bg);
-    font-size: 2em;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 15px;
-    /* background-color: black; */
-    
+  color: var(--section-bg);
+  font-size: 2em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 15px;
+  /* background-color: black; */
 }
 
 .btn {
   background-color: var(--section-bg);
   border: none;
   margin: 0px 10px;
+  box-shadow: 0px 0px 10px #fff;
 }
 .btn:hover {
   background-color: var(--main-text);
