@@ -26,6 +26,9 @@
         <a href="#info"><i class="bi bi-person-fill white-fill"></i></a>
         <a href="#projects"><i class="bi bi-grid-fill white-fill"></i></a>
         <a href="#contact"><i class="bi bi-envelope-fill white-fill"></i></a>
+        <a href="./assets/Resume.pdf" target="_blank">
+          <i class="bi bi-file-text-fill white-fill"></i>
+        </a>
       </div>
     </nav>
 
@@ -62,20 +65,11 @@
           can!
         </p>
       </div>
-      <div class="skill-icons">
-        <img class="icon-logo" src="./assets/skills/html-5-logo.png" alt="html logo">
-        <img class="icon-logo" src="./assets/skills/css-logo.png" alt="css logo">
-        <img class="icon-logo" src="./assets/skills/js-logo.png" alt="js logo">
-        <img class="icon-logo" src="./assets/skills/nodejs-logo-png.png" alt="nodejs logo">
-        <img class="icon-logo" src="./assets/skills/mongoIcon.png" alt="mongo logo">
-        <img class="icon-logo" src="./assets/skills/mysql-logo.png" alt="mysql logo">
-        <img class="icon-logo" src="./assets/skills/react-logo.png" alt="react logo">
-        <img class="icon-logo" src="./assets/skills/heroku-logo.png" alt="heroku logo">
-      </div>
     </section>
+
     <section class="project-container" id="projects">
       <h1>My work</h1>
-
+      <div class="big-project-box">
       <div class="project-card float-right">
         <div class="outer-image-container small-right">
           <img
@@ -142,6 +136,68 @@
       <div class="project-card float-right">
         <div class="outer-image-container small-right">
           <img
+            src="./assets/tech-blog.png"
+            class="card-img-top"
+            alt="tech-blog-screenshot"
+            id="tech-blog-img"
+          />
+        </div>
+        <div class="project-info-right">
+          <h2 class="card-title">Tech Blog</h2>
+          <p class="card-text">
+            A tech related blog site where users can create/read/edit posts,
+            read other user's posts, leave comments all in one place.
+          </p>
+          <a
+            href="https://afternoon-everglades-02639.herokuapp.com/"
+            class="btn"
+            target="_blank"
+            >Deployed App</a
+          >
+          <a
+            href="https://github.com/PhalenH/tech-blog"
+            class="btn"
+            target="_blank"
+            >Project Repo</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card float-left">
+        <div class="outer-image-container small-left">
+          <img
+            src="./assets/budget-tracker-screenshot.png"
+            class="card-img-top"
+            alt="budget-tracker-screenshot"
+            id="budget-img"
+          />
+        </div>
+        <div class="project-info-left">
+          <h2 class="card-title">Budget Tracker</h2>
+          <p class="card-text">
+            Allows a user to add expenses and deposits to their budget as well
+            as take out costs with or without a connection. Uses indexDB for
+            offline functionality to allow application to work without data
+            connection.
+          </p>
+          <a
+            href="https://budget-buddy-2022.herokuapp.com/"
+            class="btn"
+            target="_blank"
+            >Deployed App</a
+          >
+          <a
+            href="https://github.com/PhalenH/budget-tracker"
+            class="btn"
+            target="_blank"
+            >Project Repo</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card float-right">
+        <div class="outer-image-container small-right">
+          <img
             src="./assets/maze-runner-screenshot.png"
             class="card-img-top"
             alt="Maze-screenshot"
@@ -173,43 +229,13 @@
       <div class="project-card float-left">
         <div class="outer-image-container small-left">
           <img
-            src="./assets/tech-blog.png"
-            class="card-img-top"
-            alt="tech-blog-screenshot"
-            id="tech-blog-img"
-          />
-        </div>
-        <div class="project-info-left">
-          <h2 class="card-title">Tech Blog</h2>
-          <p class="card-text">
-            A tech related blog site where users can create/read/edit posts,
-            read other user's posts, leave comments all in one place.
-          </p>
-          <a
-            href="https://afternoon-everglades-02639.herokuapp.com/"
-            class="btn"
-            target="_blank"
-            >Deployed App</a
-          >
-          <a
-            href="https://github.com/PhalenH/tech-blog"
-            class="btn"
-            target="_blank"
-            >Project Repo</a
-          >
-        </div>
-      </div>
-
-      <div class="project-card float-right">
-        <div class="outer-image-container small-right">
-          <img
             src="./assets/weather-dashboard.png"
             class="card-img-top"
             alt="weather-dashboard-screenshot"
             id="weather-img"
           />
         </div>
-        <div class="project-info-right">
+        <div class="project-info-left">
           <h2 class="card-title">Weather Dashboard</h2>
           <p class="card-text">
             Check the weather and get the 5 day forecast anywhere in the United
@@ -230,21 +256,83 @@
           >
         </div>
       </div>
+    </div>
+      <div class="skill-icons">
+        <img
+          class="icon-logo"
+          src="./assets/skills/html-5-logo.png"
+          alt="html logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/css-logo.png"
+          alt="css logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/js-logo.png"
+          alt="js logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/nodejs-logo-png.png"
+          alt="nodejs logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/mongoIcon.png"
+          alt="mongo logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/mysql-logo.png"
+          alt="mysql logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/react-logo.png"
+          alt="react logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/heroku-logo.png"
+          alt="heroku logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/handlebars-logo.png"
+          alt="handlebars logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/jquery-logo.png"
+          alt="jquery logo"
+        />
+        <img
+          class="icon-logo"
+          src="./assets/skills/express-logo.png"
+          alt="jquery logo"
+        />
+      </div>
     </section>
-
+    <div class="desk-bg-img scroll-bg-img bg-container">
+      <div class="bg-sroll-txt-container">
+        <h1 class="bg-sroll-txt">Let's Connect!</h1>
+      </div>
+    </div>
     <section id="contact">
       <div>
-        <h1>Let's Connect!</h1>
+        <h2>Find me or contact me:</h2>
         <div class="contact-me-info">
-          <img src="./assets/ready-to-work.jpg" alt="business snoopy">
+          <img src="./assets/ready-to-work.jpg" alt="business snoopy" />
           <div class="h2-info">
-        <h2><i class="bi bi-geo-alt-fill"></i> Philadelphia, PA</h2>
-        <h2><i class="bi bi-telephone-fill"></i> Phone: (717) 808-1137</h2>
-        <h2>
-          <i class="bi bi-envelope-fill"></i> Email: phalenhazel@gmail.com
-        </h2>
-      </div>
-      </div>
+            <h2><i class="bi bi-geo-alt-fill"></i> Philadelphia, PA</h2>
+            <h2><i class="bi bi-telephone-fill"></i> Phone: (717) 808-1137</h2>
+            <h2>
+              <i class="bi bi-envelope-fill"></i> Email: phalenhazel@gmail.com
+            </h2>
+          </div>
+        </div>
       </div>
       <div class="footer-container">
         <a href="./assets/Resume.pdf" target="_blank">
@@ -267,10 +355,10 @@
         </a>
       </div>
       <h3 class="contact-me">
-        Please reach out if you have any questions or interested in working
-        together! <br /><br />
+        Feel free to reach out if you are interested in working together, have
+        any questions, or just want to chat! <br /><br />
         <a href="mailto:pchaze@yahoo.com?subject=Portfolio" id="email-me"
-          >Email Me Here</a
+          >Click here to send an email</a
         >
       </h3>
     </section>
