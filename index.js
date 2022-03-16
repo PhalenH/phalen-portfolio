@@ -8,11 +8,14 @@ let callback = (entries, observer) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add("show");
-      observer.unobserve(entry.target);
+      const project = entry.target;
+      console.log(project);
+      project.classList.remove("project-card-unobserved");
+      project.classList.add("project-card");
+      observer.unobserve(project);
     }
   });
 };
-let projects = document.querySelectorAll(".project>div");
+let projects = document.querySelectorAll(".project-card-unobserved");
 let observer = new IntersectionObserver(callback, options);
 projects.forEach((project) => observer.observe(project));

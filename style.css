@@ -72,7 +72,7 @@ h1 {
   color: white;
 }
 .white-fill:hover {
-  color: gold;
+  color: var(--section-bg);
 }
 .welcome-container {
   color: var(--main-text);
@@ -171,12 +171,28 @@ h1 {
 
 /* ============================================ */
 
-.project-card {
+.project-card-unobserved {
   /* display: flex; */
   justify-content: space-evenly;
   width: 100% !important ;
   margin: 100px 25px;
-  /* height: 50%; */
+  opacity: 0;
+}
+.project-card {
+  justify-content: space-evenly;
+  width: 100% !important ;
+  margin: 100px 25px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .outer-image-container {
   width: 50%;
@@ -194,11 +210,10 @@ h1 {
   text-align: right;
 }
 .float-left {
-  /* transform: translateX(-75px); */
   display: flex;
 }
 .float-right {
-  /* transform: translateX(75px); */
+
   display: flex;
   flex-direction: row-reverse;
 }
@@ -285,7 +300,7 @@ h1 {
   align-items: center;
 }
 .icon-text-container:hover {
-  color: white;
+  color: var(--section-bg);
 }
 
 .contact-me {
@@ -330,6 +345,7 @@ a:active {
   }
   .project-card {
     display: inline;
+    margin: 1em;
   }
   .project-info-left {
     display: inline;
