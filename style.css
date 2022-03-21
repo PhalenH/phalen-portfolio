@@ -396,7 +396,24 @@ a:active {
     height: 350px;
     width: auto;
   }
+  .contact-me-info {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+  }
+  .h2-info {
+    align-items: center;
+  }
+  .contact-me-info img {
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
 }
 
-@media screen and (max-width: 576px) {
-}
+/* @media screen and (max-width: 576px) {
+} */
