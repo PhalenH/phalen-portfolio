@@ -37,7 +37,7 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  33% {
     opacity: 0;
   }
   100% {
@@ -345,7 +345,7 @@ a:active {
   }
   .project-card {
     display: inline;
-    margin: 1em;
+    margin: 1em; 
   }
   .project-info-left {
     display: inline;
