@@ -113,10 +113,6 @@ h1 {
 }
 .about-me-container {
   margin: 50px 50px;
-  /* display: flex;
-  /* flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
   color: white;
 }
 .about-me-container p {
@@ -213,7 +209,6 @@ h1 {
   display: flex;
 }
 .float-right {
-
   display: flex;
   flex-direction: row-reverse;
 }
@@ -236,10 +231,14 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .bg-sroll-txt {
   color: #fff;
+  font-size: 4em;
 }
 
 /* ============================================ */
@@ -335,46 +334,67 @@ a:active {
 }
 
 @media screen and (max-width: 992px) {
-  .small-left {
-    float: left;
-    margin-right: 1em;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
   }
-  .small-right {
-    float: right;
-    margin-left: 1em;
+  .skill-icons {
+    height: 101px;
+  }
+  .icon-logo {
+    height: 65px;
+    width: auto;
+    /* padding: 5px 0px; */
+  }
+  .outer-image-container {
+    width: 75%;
   }
   .project-card {
     display: flex;
-    /* margin: 1em; */
+    flex-wrap: wrap;
+    margin: 0px;
   }
-  .project-info-left {
-    display: inline;
-  }
+  .project-info-left,
   .project-info-right {
-    display: inline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 75%;
+    margin: 10px 0px 50px 0px;
+  }
+  .project-title {
+    width: 100%;
+    text-align: center;
+  }
+  .card-text {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .project-card {
-    display: inline;
-    padding: 50px;
+  .icon-logo {
+    height: 50px;
+    width: auto;
   }
-  .bio-image-container {
-    width: 100%;
+  .skill-icons {
+    height: 78px;
   }
   .about-me-container {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 50px
   }
-  .outer-image-container {
+  .bio-image-container {
+    float: none;
+  }
+  .about-me-container p {
     width: 100%;
-    margin-bottom: 1em;
-  }
-  .project-info-right {
     text-align: center;
   }
-  .project-info-left {
-    text-align: center;
+  .selfie {
+    height: 350px;
+    width: auto;
   }
 }
 
