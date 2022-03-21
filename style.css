@@ -344,8 +344,8 @@ a:active {
     margin-left: 1em;
   }
   .project-card {
-    display: inline;
-    margin: 1em; 
+    display: flex;
+    /* margin: 1em; */
   }
   .project-info-left {
     display: inline;
@@ -356,6 +356,10 @@ a:active {
 }
 
 @media screen and (max-width: 768px) {
+  .project-card {
+    display: inline;
+    padding: 50px;
+  }
   .bio-image-container {
     width: 100%;
   }
