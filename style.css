@@ -269,7 +269,7 @@ h1 {
   justify-content: space-around;
   padding-left: 10px;
 }
-.footer-container {
+.bottom-icon-container {
   color: white;
   font-size: 2em;
   font-weight: 500;
@@ -320,7 +320,17 @@ h1 {
   color: var(--section-bg);
 }
 #email-me:hover {
-  transform: scale(1.15, 1.15);
+  /* transform: scale(1.15, 1.15); */
+  background-color: #c3073f;
+  color: white;
+  border: 3px solid white;
+}
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: #c3073f;
+  font-family:monospace;
 }
 
 /* ============================================ */
@@ -383,7 +393,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 50px
+    margin: 40px 50px;
   }
   .bio-image-container {
     float: none;
