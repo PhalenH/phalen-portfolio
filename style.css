@@ -51,7 +51,12 @@ body {
 h1 {
   font-size: 5em;
 }
-
+.job-title {
+  color: #c3073f;
+}
+.highlight {
+  border-bottom: 1px solid #c3073f;
+}
 .nav-container {
   color: var(--main-bg);
   font-size: 1.5em;
@@ -348,6 +353,9 @@ a:active {
     font-size: 3em;
     margin-bottom: 50px;
   }
+  .about-me-container p {
+    font-size: 15px;
+  }
   .skill-icons {
     height: 101px;
   }
@@ -389,11 +397,14 @@ a:active {
   .skill-icons {
     height: 78px;
   }
+  .info-container {
+    padding-top: 10px;
+  }
   .about-me-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 50px;
+    margin: 5px 50px 40px 50px;
   }
   .bio-image-container {
     float: none;
@@ -401,9 +412,11 @@ a:active {
   .about-me-container p {
     width: 100%;
     text-align: center;
+    line-height: 20px;
+    font-size: 15px;
   }
   .selfie {
-    height: 350px;
+    height: 250px;
     width: auto;
   }
   .contact-me-info {
@@ -422,6 +435,9 @@ a:active {
     width: 150px;
     margin-top: 10px;
     margin-right: 0px;
+  }
+  .bottom-icon-container {
+    font-size: 25px;
   }
 }
 
