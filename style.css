@@ -351,7 +351,11 @@ a:active {
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+  }
+  #who-i-am {
+    font-size: 25px;
+    margin-bottom: 5px;
   }
   .about-me-container p {
     font-size: 15px;
