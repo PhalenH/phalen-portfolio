@@ -318,17 +318,18 @@ h1 {
   width: 50%;
 }
 #email-me {
-  border: 3px solid var(--section-bg);
-  background-color: var(--main-text);
+  border: 3px solid white;
+  background-color: #c3073f;
   border-radius: 1em;
   padding: 10px;
-  color: var(--section-bg);
+  color: white;
 }
 #email-me:hover {
-  /* transform: scale(1.15, 1.15); */
+  /* transform: scale(1.15, 1.15); */ 
   background-color: #c3073f;
-  color: white;
-  border: 3px solid white;
+  background-color: var(--main-text);
+  color: var(--section-bg);
+  border: 3px solid var(--section-bg);
 }
 footer {
   text-align: center;
