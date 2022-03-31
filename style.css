@@ -51,12 +51,12 @@ body {
 h1 {
   font-size: 5em;
 }
-.job-title {
+/* .job-title {
   color: #c3073f;
-}
-.highlight {
+} */
+/* .highlight {
   border-bottom: 1px solid #c3073f;
-}
+} */
 .nav-container {
   color: var(--main-bg);
   font-size: 1.5em;
@@ -123,6 +123,7 @@ h1 {
 .about-me-container p {
   /* width: 50%; */
   line-height: 2em;
+  font-size: 25px;
 }
 .selfie {
   max-width: 100%;
