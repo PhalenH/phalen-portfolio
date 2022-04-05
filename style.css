@@ -51,12 +51,6 @@ body {
 h1 {
   font-size: 5em;
 }
-/* .job-title {
-  color: #c3073f;
-} */
-/* .highlight {
-  border-bottom: 1px solid #c3073f;
-} */
 .nav-container {
   color: var(--main-bg);
   font-size: 1.5em;
@@ -104,7 +98,6 @@ h1 {
 /* ============================================ */
 
 .info-container {
-  /* background-color: var(--section-bg); */
   position: relative;
   padding-top: 50px;
   margin: 50px 0px;
@@ -121,8 +114,7 @@ h1 {
   color: white;
 }
 .about-me-container p {
-  /* width: 50%; */
-  line-height: 2em;
+  line-height: 35px;
   font-size: 20px;
 }
 .selfie {
@@ -174,7 +166,6 @@ h1 {
 /* ============================================ */
 
 .project-card-unobserved {
-  /* display: flex; */
   justify-content: space-evenly;
   width: 100% !important ;
   margin: 100px 25px;
@@ -283,7 +274,6 @@ h1 {
   justify-content: space-evenly;
   width: 66%;
   padding: 15px;
-  /* background-color: black; */
 }
 
 .btn {
@@ -326,7 +316,6 @@ h1 {
   color: white;
 }
 #email-me:hover {
-  /* transform: scale(1.15, 1.15); */ 
   background-color: #c3073f;
   background-color: var(--main-text);
   color: var(--section-bg);
@@ -386,7 +375,6 @@ a:active {
   .icon-logo {
     height: 65px;
     width: auto;
-    /* padding: 5px 0px; */
   }
   .outer-image-container {
     width: 75%;
@@ -465,5 +453,3 @@ a:active {
   }
 }
 
-/* @media screen and (max-width: 576px) {
-} */
