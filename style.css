@@ -338,8 +338,12 @@ a:active {
   text-decoration: none;
   color: var(--border-text);
 }
-
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 850px) {
+  .about-me-container p {
+    font-size: 16px;
+  } 
+}
+@media screen and (max-height: 735px) {
   .about-me-container p {
     font-size: 15px;
   }
@@ -347,16 +351,12 @@ a:active {
     height: 75px;
   }
 }
-@media screen and (max-height: 700px) {
-  .about-me-container p {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1350px) {
+
+/* @media screen and (max-width: 1350px) {
   .about-me-container p {
     font-size: 18px;
   }
-}
+} */
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 3em;
