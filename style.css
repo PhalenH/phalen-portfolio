@@ -110,7 +110,7 @@ h1 {
   margin: 0px 50px;
 }
 .about-me-container {
-  margin: 50px 50px;
+  margin: 25px 50px;
   color: white;
 }
 .about-me-container p {
@@ -348,15 +348,15 @@ a:active {
     font-size: 15px;
   }
   .skill-icons {
-    height: 75px;
+    height: 65px;
   }
 }
 
-/* @media screen and (max-width: 1350px) {
-  .about-me-container p {
-    font-size: 18px;
+@media screen and (max-width: 1350px) {
+   .skill-icons {
+    height: 85px;
   }
-} */
+}
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 3em;
@@ -367,10 +367,11 @@ a:active {
     margin-bottom: 5px;
   }
   .about-me-container p {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 30px;
   }
   .skill-icons {
-    height: 101px;
+    height: 65px;
   }
   .icon-logo {
     height: 65px;
@@ -407,7 +408,7 @@ a:active {
     width: auto;
   }
   .skill-icons {
-    height: 78px;
+    height: 55px;
   }
   .info-container {
     padding-top: 10px;
@@ -453,3 +454,45 @@ a:active {
   }
 }
 
+@media screen and (max-width: 480px) {
+  #greeting {
+    font-size: 30px;
+  }
+  #who-i-am {
+    font-size: 20px;
+  }
+  .icon-logo {
+    height: 40px;
+  }
+  .selfie {
+    height: 150px;
+    width: auto;
+  }
+  .about-me-container p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .project-info-left,
+  .project-info-right {
+    width: 80%;
+  }
+  .bg-sroll-txt {
+    font-size: 25px;
+  }
+  .desk-bg-img {
+    min-height: 250px;
+  }
+  .contact-me {
+    width: 90%;
+    font-size: 20px;
+  }
+  .h2-info h2{
+    font-size: 20px;
+  }
+  .bottom-icon-container {
+    width: 80%;
+  }
+  .icon-text {
+    font-size: 20px;
+  }
+}
