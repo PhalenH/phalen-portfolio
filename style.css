@@ -326,7 +326,7 @@ footer {
   color: white;
   padding: 10px;
   background-color: #c3073f;
-  font-family:monospace;
+  font-family: monospace;
 }
 
 /* ============================================ */
@@ -341,7 +341,7 @@ a:active {
 @media screen and (max-height: 850px) {
   .about-me-container p {
     font-size: 16px;
-  } 
+  }
 }
 @media screen and (max-height: 735px) {
   .about-me-container p {
@@ -353,7 +353,7 @@ a:active {
 }
 
 @media screen and (max-width: 1350px) {
-   .skill-icons {
+  .skill-icons {
     height: 85px;
   }
 }
@@ -454,7 +454,7 @@ a:active {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-height: 480px) {
   #greeting {
     font-size: 30px;
   }
@@ -462,7 +462,7 @@ a:active {
     font-size: 20px;
   }
   .about-me-container {
-    margin: 5px 25px 40px 25px; ;
+    margin: 5px 25px 40px 25px;
   }
   .icon-logo {
     height: 40px;
@@ -472,8 +472,8 @@ a:active {
     width: auto;
   }
   .about-me-container p {
-    line-height: 22px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 10px;
   }
   .project-info-left,
   .project-info-right {
@@ -490,7 +490,7 @@ a:active {
     width: 90%;
     font-size: 20px;
   }
-  .h2-info h2{
+  .h2-info h2 {
     font-size: 20px;
   }
   .bottom-icon-container {
