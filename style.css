@@ -472,8 +472,8 @@ a:active {
     width: auto;
   }
   .about-me-container p {
-    line-height: 20px;
-    font-size: 10px;
+    line-height: 22px;
+    font-size: 12px;
   }
   .project-info-left,
   .project-info-right {
@@ -483,6 +483,7 @@ a:active {
     font-size: 25px;
   }
   .desk-bg-img {
+    background-image: url(./assets/computer-desk-mini.jpg);
     min-height: 250px;
   }
   .contact-me {
