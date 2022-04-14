@@ -461,6 +461,9 @@ a:active {
   #who-i-am {
     font-size: 20px;
   }
+  .about-me-container {
+    margin: 5px 25px 40px 25px; ;
+  }
   .icon-logo {
     height: 40px;
   }
@@ -470,7 +473,7 @@ a:active {
   }
   .about-me-container p {
     line-height: 20px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .project-info-left,
   .project-info-right {
